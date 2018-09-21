@@ -1,0 +1,667 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#panel {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 999;
+}
+
+#login {
+    width: 500px;
+    height: 400px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 50%;
+    margin-top: -250px;
+    left: 50%;
+    margin-left: -200px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+}
+
+#nav {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 998;
+}
+
+#nav_main {
+    width: 1250px;
+    height: 50px;
+    /*background-color: red;*/
+    margin: 0 auto;
+}
+
+#nav_logo {
+    width: 80px;
+    height: 50px;
+    padding-top: 10px;
+    float: left;
+}
+
+#nav_ul {
+    width: 350px;
+    height: 50px;
+    /*background-color: yellow;*/
+    float: left;
+}
+
+#nav_ul li {
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    width: 40px;
+    margin-left: 16px;
+
+}
+
+#nav_ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav_ul li a:hover {
+    color: red;
+}
+
+#nav_right {
+    width: 820px;
+    height: 50px;
+    /*background-color: paleturquoise;*/
+    float: right;
+}
+
+#nav_right input {
+    width: 650px;
+    height: 30px;
+    margin-top: 7px;
+    color: #999999;
+}
+
+#nav_right button {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 8px;
+    border-radius: 5px;
+}
+
+#nav_right .left {
+    color: white;
+    margin-left: 15px;
+    background-color: red;
+}
+
+#advertising {
+    width: 100%;
+    height: 180px;
+    background-color: darkorange;
+    position: relative;
+    top: 50px;
+}
+
+#adv_top {
+    width: 100%;
+    height: 60px;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+}
+
+#adv_top img {
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    margin-left: -1000px;
+}
+
+#adv_bottom {
+    width: 100%;
+    height: 120px;
+    background: url("../images/login_header_blurbg.jpg") center center no-repeat;
+    position: relative;
+}
+
+#adv_bottom_left {
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    left: 140px;
+    top: 30px;
+    color: white;
+}
+
+#adv_bottom_left h2 {
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+#adv_bottom_left p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#adv_bottom_right {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    right: 120px;
+}
+
+#adv_bottom_right p {
+    width: 200px;
+    height: 15px;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+
+#adv_bottom_right .line-left, .line-right {
+    width: 40px;
+    background-color: #fff;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+}
+
+#adv_bottom_right .line-left {
+    left: 20px;
+    top: 80px;
+}
+
+#adv_bottom_right .line-right {
+    right: 20px;
+    top: 80px;
+}
+
+#adv_bottom_right .adv_bottom_right_top {
+    width: 300px;
+    height: 80px;
+}
+
+#adv_bottom_right .adv_bottom_right_top span {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px 0 0 20px;
+    border-radius: 50%;
+}
+
+#adv_bottom_right .adv_bottom_right_top a:nth-child(1) span {
+    background: url("../images/icon.jpg") -2px -2px no-repeat;
+}
+
+#adv_bottom_right .adv_bottom_right_top a:nth-child(2) span {
+    background: url("../images/icon.jpg") -242px -2px no-repeat;
+}
+
+#adv_bottom_right .adv_bottom_right_top a:nth-child(3) span {
+    background: url("../images/icon.jpg") -162px -2px no-repeat;
+}
+
+#adv_bottom_right .adv_bottom_right_top a:nth-child(4) span {
+    background: url("../images/icon.jpg") -82px -2px no-repeat;
+}
+
+#content_nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(128, 128, 128, 0.8);
+    position: absolute;
+    left: 0;
+    top: 230px;
+    display: none;
+    z-index: 998;
+}
+
+#content_nav .content-nav-left {
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    left: 140px;
+    top: 10px;
+    color: white;
+}
+
+#content_nav .content-nav-left h2 {
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+#content_nav .content-nav-left p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#content_nav .content-nav-right {
+    width: 400px;
+    height: 80px;
+    position: absolute;
+    right: 130px;
+}
+
+#content_nav .content-nav-right p {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 30px;
+}
+
+#content_nav .content-nav-right .content-nav-right-right {
+    position: absolute;
+    right: 10px;
+}
+
+#content_nav .content-nav-right .content-nav-right-right span {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 12px 0 0 5px;
+    border-radius: 50%;
+}
+
+#content_nav .content-nav-right .content-nav-right-right a:nth-child(1) span {
+    background: url("../images/icon2.png") 0 0 no-repeat;
+    background-size: cover;
+}
+
+#content_nav .content-nav-right .content-nav-right-right a:nth-child(2) span {
+    background: url("../images/icon2.png") -50px 0 no-repeat;
+    background-size: cover;
+}
+
+#content_nav .content-nav-right .content-nav-right-right a:nth-child(3) span {
+    background: url("../images/icon2.png") -100px 0 no-repeat;
+    background-size: cover;
+}
+
+#content_nav .content-nav-right .content-nav-right-right a:nth-child(4) span {
+    background: url("../images/icon2.png") -150px 0 no-repeat;
+    background-size: cover;
+}
+
+#type_title {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    top: 50px;
+}
+
+#type_title span {
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+}
+
+#type_title .type-title-left {
+    left: 650px;
+    top: 68px;
+}
+
+#type_title .type-title-right {
+    right: 650px;
+    top: 68px;
+}
+
+#type_title h2 {
+    font-size: 30px;
+    color: #111111;
+    position: absolute;
+    left: 740px;
+    top: 50px;
+}
+
+#tab #tab_header {
+    width: 100%;
+    height: 48px;
+    position: relative;
+}
+
+#tab_header ul {
+    width: 300px;
+    height: 48px;
+    position: absolute;
+    left: 610px;
+}
+
+#tab_header ul li {
+    float: left;
+    color: black;
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+#tab_header .choose {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+#tab_content {
+    width: 100%;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+}
+
+#tab_content .dom {
+    width: 100%;
+    position: absolute;
+    background-color: #e8e8e8;
+}
+
+#tab_content .dom .dom-top {
+    width: 100%;
+
+}
+
+#tab_content .dom .dom-top ul {
+    width: 1244px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#tab_content .dom .dom-top ul li {
+    width: 236px;
+    height: 123px;
+    float: left;
+}
+
+
+.dom-content {
+    position: relative;
+    width: 1244px;
+    height: 0;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.dom-content .box {
+    width: 236px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+    float: left;
+    position: absolute;
+    background-color: #fff;
+}
+
+.dom-content .box .pic {
+    width: 236px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.dom-content .box .pic img {
+    width: 236px;
+}
+
+.dom-content .box p {
+    line-height: 18px;
+    padding: 0 10px;
+    margin: 10px 0;
+    font-size: 12px;
+    word-wrap: break-word;
+    color: #111111;
+}
+
+.dom-content .box .pic .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: none;
+}
+
+.dom-content .box .btn {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    z-index: 3;
+    display: none;
+}
+
+.dom-content .box .btn .collect {
+    height: 30px;
+    background-color: #E53E49;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.dom-content .box .btn .like {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dom-content .box .btn .like .heart {
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    background: url("../images/action_icons12.png") -20px 0 no-repeat;
+
+}
+
+#tab_content .dom:nth-child(1) {
+    display: block;
+}
+
+#tab_content .dom:nth-child(2) {
+    background-color: skyblue;
+    display: none;
+}
+
+#tab_content .dom:nth-child(3) {
+    background-color: gold;
+    display: none;
+}
+
+.return-top, .add {
+    width: 40px;
+    height: 35px;
+    background-color: #fff;
+    position: fixed;
+    right: 10px;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+}
+
+.return-top {
+    background: rgba(0, 0, 0, 0.7) url("../images/iconsprite_btbar.png") 7px 4px no-repeat;
+    bottom: 100px;
+    display: none;
+}
+
+.return-top a {
+    width: 40px;
+    height: 35px;
+    display: block;
+}
+
+.add {
+    background: rgba(0, 0, 0, 0.7) url("../images/iconsprite_btbar.png") 7px -35px no-repeat;
+    bottom: 40px;
+}
+
+#login .login-top .login-logo {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background: url("../images/huaban_logo.jpg") center center no-repeat;
+    background-size: 140% auto;
+    top: 30px;
+    left: 200px;
+}
+
+#login .login-top .left, .right {
+    width: 80px;
+    height: 1px;
+    background-color: #999999;
+    display: block;
+    position: absolute;
+}
+
+#login .login-top .left {
+    left: 60px;
+    top: 100px;
+}
+
+#login .login-top .right {
+    right: 60px;
+    top: 100px;
+}
+
+#login .login-top p {
+    font-size: 16px;
+    position: absolute;
+    top: 90px;
+    left: 180px;
+}
+
+#login .login-top .bottom-p {
+    top: 190px;
+}
+
+#login .login-top .bottom {
+    top: 200px;
+}
+
+#login .login-top .center {
+    width: 380px;
+    height: 50px;
+    position: absolute;
+    left: 60px;
+    top: 120px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+#login .login-top .center span {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    display: block;
+    float: left;
+    border-radius: 50%;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+#login .login-top .center span:nth-child(5) {
+    margin-right: 0;
+    background: url("../images/login_icons_tiny.svg") -320px 0 no-repeat;
+}
+
+#login .login-top .center span:nth-child(1) {
+    background: url("../images/login_icons_tiny.svg") 0 0 no-repeat;
+}
+
+#login .login-top .center span:nth-child(2) {
+    background: url("../images/login_icons_tiny.svg") -80px 0 no-repeat;
+}
+
+#login .login-top .center span:nth-child(3) {
+    background: url("../images/login_icons_tiny.svg") -160px 0 no-repeat;
+}
+
+#login .login-top .center span:nth-child(4) {
+    background: url("../images/login_icons_tiny.svg") -240px 0 no-repeat;
+}
+
+#login .login-bottom .text {
+    width: 380px;
+    height: 30px;
+    position: absolute;
+    left: 60px;
+    top: 220px;
+}
+
+#login .login-bottom .password {
+    width: 380px;
+    height: 30px;
+    position: absolute;
+    left: 60px;
+    top: 265px;
+}
+#login .login-bottom .input {
+    width: 382px;
+    height: 30px;
+    position: absolute;
+    left: 60px;
+    top: 310px;
+    background-color: #e53e49;
+}
+#login .login-bottom .input a {
+    width: 382px;
+    height: 30px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#login .login-bottom p {
+    width: 382px;
+    height: 30px;
+    position: absolute;
+    left: 60px;
+    top: 350px;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+}
+#login .login-bottom p span a {
+    text-decoration: none;
+    color: #E53E49;
+}
+
+#login .close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: url("../images/action_icons12.png") -80px -11px no-repeat;
+    cursor: pointer;
+}
